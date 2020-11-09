@@ -1,0 +1,87 @@
+@mixin grid($cols, $margin) {
+  float: left;
+  background: #ce3d3d;
+  margin-bottom: $margin;
+  height: 150px;
+
+  @if ($cols >= 5) {
+    width: 100%;
+    margin-right: 0;
+  } @else {
+    width: ((100% - (($cols - 1) * $margin)) / $cols);
+    margin-right: $margin;
+  }
+
+  &:nth-child(#{$cols}n) {
+    margin-right: 0;
+  }
+}
+
+@mixin delpx ($val) {
+  &:first-child {
+    padding-left: #{$val}px;
+    @content;
+  }
+  &:last-child {
+    padding-right: #{$val}px;
+    @content;
+  }
+
+}
+
+@mixin px($left, $right) {
+  padding-left: $left;
+  padding-right: $right;
+}
+
+@mixin py($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin mx($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+@mixin my($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin pxa($var) {
+  padding-left: $var;
+  padding-right: $var;
+}
+
+@mixin pya($var) {
+  padding-top: $var;
+  padding-bottom: $var;
+}
+
+@mixin mxa($var) {
+  margin-left: $var;
+  margin-right: $var;
+}
+
+@mixin mya($var) {
+  margin-top: $var;
+  margin-bottom: $var;
+}
+
+@mixin bgImgCover($path) {
+  background-image: url('../img/#{$path}.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@mixin bgImgContain($path) {
+  background-image: url('../img/#{$path}.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+// FOR PROJECT
+

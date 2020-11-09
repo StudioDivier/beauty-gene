@@ -18,9 +18,13 @@
     "gulp-csso": "^4.0.1",
     "gulp-file-include": "^2.2.2",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0"
   },
   "dependencies": {
-    "global": "^4.4.0"
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap": "^4.5.3",
+    "global": "^4.4.0",
+    "slick-carousel": "^1.8.1"
   }
 }

@@ -1,2 +1,129 @@
 </body>
+<script>
+    $('.sliderDiv').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: `<img src="img/left-arrow.png" alt="arrow" style="cursor: pointer; position: absolute; top: 105px; left: -80px"/>`,
+        nextArrow: `<img src="img/right-arrow.png" alt="arrow" style="cursor: pointer; position: absolute; top: 105px; right: -80px"/>`,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+</script>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <span>
+                    Адрес клиники
+                </span>
+                <span>
+                    контакты
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-center">
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="Company logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">О клинике<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Услуги</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Прайс-лист</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">До и после</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Акции</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Онлайн</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Команда</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Вопросы</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+
+                <li class="call-us-block">
+                    <img src="./img/whatsapp-green.png" alt="Whatsapp">
+                    <img src="./img/phone-blue.png" alt="Phone">
+                    <a class="nav-link" href="#">8 (495) 342-56-05</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p style="text-align: right; font-size: 10px;">
+                    <a
+                            href="https://www.divier.ru/"
+                            style="color: #4f9c50; text-decoration: underline">
+                        Создание сайта
+                    </a> ДиВиЕр
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>
