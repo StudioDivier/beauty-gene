@@ -32,8 +32,9 @@ function scss() {
 }
 
 // function js() {
-//     return src('src/js/**.js')
-//         .pipe()
+//     return src('node_modules/bootstrap/dist/js/bootstrap.js')
+//         .pipe(concat('index.js'))
+//         .pipe(dest('dist'))
 // }
 
 function fonts() {
@@ -59,9 +60,9 @@ function serve() { // (для режима разработки) может за
     })
 
     watch('src/**.html', series(html)).on('change', sync.reload) // позволяет смотреть за изменением файлов и выполнять какие-либо действия
-    watch('src/scss/**', series(scss)).on('change', sync.reload)
+    watch('src/scss/**', series(scss)).on('change', scss)
     watch('src/img/**.{jpg,svg,jpeg,png}', series(images)).on('change', sync.reload)
-    watch('dist/style.css').on('change', sync.reload)
+    watch('dist/styles.css').on('change', sync.reload)
 }
 
 

@@ -34,25 +34,142 @@
             }
         ]
     });
+    $('.promo-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: `<img src="img/left-arrow.png" alt="arrow" style="cursor: pointer; position: absolute; top: -40px; right: 75px"/>`,
+        nextArrow: `<img src="img/right-arrow.png" alt="arrow" style="cursor: pointer; position: absolute; top: -40px; right: 9px"/>`,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    $('.steps-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: `<img src="img/left-arrow.png" alt="arrow" style="cursor: pointer; position: absolute; top: -200px; right: 75px"/>`,
+        nextArrow: `<img src="img/right-arrow.png" alt="arrow" style="cursor: pointer; position: absolute; top: -200px; right: 9px"/>`,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    $('.stuff-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: `<img src="img/left-arrow.png" alt="arrow" style="cursor: pointer; position: absolute; top: -40px; right: 75px"/>`,
+        nextArrow: `<img src="img/right-arrow.png" alt="arrow" style="cursor: pointer; position: absolute; top: -40px; right: 9px"/>`,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
 </script>
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col">
-                <span>
+            <div class="col-12 headers-wrapper">
+                <span class="section-subHeader">
                     Адрес клиники
                 </span>
-                <span>
+                <span class="section-header">
                     контакты
                 </span>
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
-
+            <div class="col-xs-12 col-md-5 contacts-wrapper">
+                <span>
+                    Наши контактные данные
+                </span>
+                <span><img src="img/marker.png" alt="Map marker"> м. Парк Победы, улица Генерала Ермолова, 2</span>
+                <span><img src="img/clock.png" alt="Clock"> ежедневно 10:00 - 22:00</span>
+                <span><img src="img/phone.png" alt="Phone"> +7 (495) 162-51-93</span>
+                <div class="social-icons">
+                    <img src="img/instagram.png" alt="Instagram">
+                    <img src="img/facebook.png" alt="Facebook">
+                </div>
+                <div class="btn-wrapper">
+                    <button class="cta-button">Запись</button>
+                    <button class="cta-button"><img src="img/whatsapp-white.png" alt=""></button>
+                </div>
             </div>
-            <div class="col-6">
-
+            <div class="col-xs-12 col-md-7 map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.3837414031973!2d37.51610251608806!3d55.73446120087366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bfa41abad99%3A0xb4ede820dd7c8197!2sGenerala%20Yermolova%20Ulitsa%2C%202%2C%20Moskva%2C%20121170!5e0!3m2!1sen!2sru!4v1605019086885!5m2!1sen!2sru"
+                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </div>
@@ -112,16 +229,18 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <p style="text-align: right; font-size: 10px;">
-                    <a
-                            href="https://www.divier.ru/"
-                            style="color: #4f9c50; text-decoration: underline">
-                        Создание сайта
-                    </a> ДиВиЕр
-                </p>
+    <div class="divier-wrapper" style="background-color: white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p style="text-align: right; font-size: 10px;">
+                        <a
+                                href="https://www.divier.ru/"
+                                style="color: #4f9c50; text-decoration: underline">
+                            Создание сайта
+                        </a> ДиВиЕр
+                    </p>
+                </div>
             </div>
         </div>
     </div>
