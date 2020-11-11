@@ -1,0 +1,109 @@
+@import 'common/mixins';
+@import 'common/screen';
+@import 'common/colors';
+@import 'common/variables';
+
+.team-page {
+  background-image: url("img/services-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //background-position: center center;
+
+  .team-page__workers-section {
+
+    padding-top: 50px;
+    @include max-w(425) {
+      padding-top: 25px;
+    }
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-weight: 100;
+      font-size: 68px;
+      @include max-w(425) {
+        font-size: $subHeader375;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      color: $grey-color;
+      font-size: 149px;
+      opacity: 0.29;
+      text-transform: uppercase;
+      letter-spacing: 17px;
+      font-family: FuturaFont;
+      font-weight: 700;
+      @include max-w(425) {
+        font-size: $header375;
+      }
+    }
+
+    .team__wrapper {
+      padding-top: 25px;
+
+      .col-lg-4 {
+        margin-bottom: 30px;
+      }
+
+      .single-worker__wrapper {
+        margin-bottom: 30px;
+        height: 100%;
+
+        img {
+          width: 100%;
+        }
+
+        .single-worker__header {
+          h5 {
+            margin-bottom: 10px;
+            padding-top: 15px;
+            font-weight: 100;
+            font-size: 30px;
+            @include max-w(425) {
+              font-size: 20px;
+              padding-top: 20px;
+              padding-bottom: 5px;
+            }
+          }
+          p:first-child {
+            span:first-child {
+              font-weight: 400;
+            }
+          }
+          p:last-child {
+            font-weight: 100;
+          }
+        }
+
+        .single-worker__content {
+          width: 100%;
+          padding: 10px 0 25px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          text-align: left;
+          color: $blue-color;
+          font-size: 16px;
+
+          .cta-button {
+            padding: 13px 50px;
+            @include max-w(425) {
+              padding: 13px 40px;
+            }
+          }
+
+          .custom-outline {
+            padding: 13px 50px;
+            @include max-w(425) {
+              padding: 13px 40px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}

@@ -50,6 +50,11 @@ function images() {
         .pipe(dest('dist/img'));
 }
 
+function imageFolders() {
+    return src('src/img/*/**.{jpg,svg,jpeg,png}')
+        .pipe(dest('dist/img'));
+}
+
 function clear() { // чистим папку dist перед билдом
     return del('dist')
 }
@@ -62,13 +67,13 @@ function serve() { // (для режима разработки) может за
     watch('src/**.html', series(html)).on('change', sync.reload) // позволяет смотреть за изменением файлов и выполнять какие-либо действия
     watch('src/scss/**', series(scss)).on('change', scss)
     watch('src/img/**.{jpg,svg,jpeg,png}', series(images)).on('change', sync.reload)
+    watch('src/img/*', series(imageFolders)).on('change', sync.reload)
     watch('dist/styles.css').on('change', sync.reload)
 }
 
 
-
 // exports.html = html
 // exports.scss = scss
-exports.build = series(scss, html, fonts) // series позволяет последовательно вызывать некоторые задачи
-exports.serve = series(clear, scss, html, fonts, images, serve)
+exports.build = series(scss, html, fonts, imageFolders) // series позволяет последовательно вызывать некоторые задачи
+exports.serve = series(clear, scss, html, fonts, images, imageFolders, serve)
 exports.clear = clear

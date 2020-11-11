@@ -1,0 +1,202 @@
+@import 'common/mixins';
+@import 'common/screen';
+@import 'common/colors';
+@import 'common/variables';
+
+.promo-page {
+  background-image: url("img/services-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //background-position: center center;
+
+  .promo-page__promos-section {
+
+    padding-top: 75px;
+    @include max-w(425) {
+      padding-top: 25px;
+    }
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-weight: 100;
+      font-size: 68px;
+      @include max-w(425) {
+        font-size: $subHeader375;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      color: $grey-color;
+      font-size: 149px;
+      opacity: 0.29;
+      text-transform: uppercase;
+      letter-spacing: 17px;
+      font-family: FuturaFont;
+      font-weight: 700;
+      @include max-w(425) {
+        font-size: $header375;
+      }
+    }
+
+    .promo__wrapper {
+      padding-top: 25px;
+
+      .col-lg-4 {
+        margin-bottom: 30px;
+      }
+
+      .promo1 {
+        background-image: url("img/promo/img1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      .promo2 {
+        background-image: url("img/promo/img2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      .promo3 {
+        background-image: url("img/promo/img3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-align: right;
+      }
+
+      .single-promo__wrapper {
+        margin-bottom: 30px;
+        height: 100%;
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.07);
+        border-radius: 45px;
+        overflow: hidden;
+        background-color: white;
+
+        .single-promo__header {
+          h5 {
+            margin-bottom: 10px;
+            padding-top: 15px;
+            font-weight: 100;
+            font-size: 30px;
+            @include max-w(425) {
+              font-size: 20px;
+              padding-top: 20px;
+              padding-bottom: 5px;
+            }
+          }
+
+          p:first-child {
+            span:first-child {
+              font-weight: 400;
+            }
+          }
+
+          p:last-child {
+            font-weight: 100;
+          }
+
+          .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+            height: 283px;
+
+            span {
+              padding-bottom: 10px;
+            }
+
+            .green-promo {
+              background-color: $veryGreen-color;
+            }
+
+            div {
+              background-color: #577593;
+              border-radius: 22px;
+              color: white;
+              padding: 10px 30px;
+              width: 40%;
+              text-align: center;
+              margin-bottom: 30px;
+              font-size: 18px;
+            }
+
+            .first-span {
+              font-size: 38px;
+              @include max-w(425) {
+                font-size: 30px;
+              }
+              font-weight: 300;
+              line-height: 1;
+              padding-bottom: 10px;
+
+              .colored-span {
+                font-weight: 900;
+              }
+            }
+
+            .second-span {
+              font-size: 30px;
+
+              @include max-w(425) {
+                font-size: 22px;
+              }
+              line-height: 1;
+              font-weight: 500;
+            }
+          }
+
+        }
+
+        .single-promo__content {
+          width: 100%;
+          padding: 25px 25px 0;
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          color: $blue-color;
+          font-size: 16px;
+
+          .promo__date {
+            span {
+              color: #121212;
+              font-weight: 100;
+              font-size: 14px;
+            }
+          }
+
+          h5 {
+            padding-top: 12.5px;
+            font-weight: 100;
+            font-size: 22px;
+            @include max-w(425) {
+              font-size: 20px;
+            }
+          }
+
+          p {
+            padding-top: 10px;
+            font-weight: 300;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+          }
+
+          span:last-child {
+            text-align: right;
+            text-decoration: underline;
+            color: $blue-color;
+            font-size: 12px;
+          }
+
+        }
+      }
+    }
+  }
+
+}

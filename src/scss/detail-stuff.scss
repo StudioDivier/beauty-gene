@@ -1,0 +1,94 @@
+@import 'common/mixins';
+@import 'common/screen';
+@import 'common/colors';
+@import 'common/variables';
+
+.detail-stuff-page {
+  background-image: url("img/services-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .headers-wrapper {
+    padding-bottom: 50px;
+  }
+
+  .stuff-bio {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .avatar-wrapper {
+      width: 40%;
+      @include max-w(425) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .bio-text {
+      width: 60%;
+      @include max-w(425) {
+        width: 100%;
+        padding-left: 0;
+      }
+      padding-top: 15px;
+      padding-left: 60px;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-weight: 100;
+        font-size: 68px;
+        color: #4d4d4d;
+        @include max-w(425) {
+          letter-spacing: 1px;
+        }
+        letter-spacing: 3.06px;
+        padding-bottom: 15px;
+        @include max-w(425) {
+          font-size: 30px;
+        }
+      }
+
+      span {
+        padding-bottom: 25px;
+        @include max-w(425) {
+          padding-bottom: 15px;
+        }
+      }
+
+      .profession {
+        font-size: 20px;
+        @include max-w(425) {
+          font-size: 14px;
+        }
+      }
+
+      .years-of-service {
+        font-size: 18px;
+        @include max-w(425) {
+          font-size: 12px;
+        }
+      }
+
+      button {
+        @include max-w(425) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        margin-top: 10px;
+        width: 50%;
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-weight: 300;
+      }
+    }
+  }
+}

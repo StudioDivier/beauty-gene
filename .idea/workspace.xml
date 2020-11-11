@@ -2,21 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="254278a4-6306-4826-9689-b08edf78f744" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/detail-stuff.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parts/breadcrumbs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/promo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/detail-stuff.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/promo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/services.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/specialists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stuff.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/facebook.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/instagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/instagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/weirdBckgr.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/facebook.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/instagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/instagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/weirdBckgr.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parts/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/common/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/common/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -60,11 +63,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Divier\Beauty Gene\beauty-gene\src\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Divier\Beauty Gene\beauty-gene\src\scss" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Divier\Beauty Gene\beauty-gene\src" />
+      <recent name="D:\Divier\Beauty Gene\beauty-gene\src\js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -78,6 +82,7 @@
       <workItem from="1604670109363" duration="6671000" />
       <workItem from="1604906738528" duration="30845000" />
       <workItem from="1604992705892" duration="27640000" />
+      <workItem from="1605079145525" duration="28500000" />
     </task>
     <servers />
   </component>
