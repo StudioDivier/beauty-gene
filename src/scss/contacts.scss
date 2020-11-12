@@ -9,10 +9,17 @@
   background-size: cover;
   background-position: center center;
 
+  @include max-w(425) {
+    font-size: 13px;
+  }
+
   h3 {
     font-size: 54px;
     font-weight: 100;
     color: $text-color;
+    @include max-w(425) {
+      font-size: 25px;
+    }
   }
 
   .headers-wrapper {
@@ -36,8 +43,26 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @include max-w(425) {
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
 
         .single-col {
+          @include max-w(425) {
+            width: 100%;
+            padding: 0 0 25px 0 !important;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: 0 !important;
+            margin: 0 !important;
+            text-align: center;
+            img {
+              position: absolute;
+              left: 0;
+            }
+          }
           position: relative;
           width: 33%;
           display: flex;
@@ -47,8 +72,28 @@
             padding-left: 20px;
           }
 
+          .phone-div {
+            @include max-w(425) {
+              width: 100%;
+            }
+          }
+
           .media {
-            //padding-left: 25px;
+            @include max-w(425) {
+              position: relative;
+              justify-content: center;
+              width: 100%;
+              padding-top: 30px;
+              img:first-child {
+                width: 52.5px;
+              }
+              img:last-child {
+                width: 26px;
+              }
+              img {
+                position: relative;
+              }
+            }
             position: absolute;
             right: 0;
 
@@ -79,6 +124,9 @@
 
   .map-wrapper {
     padding-top: 50px;
+    @include max-w(425) {
+      padding-top: 20px;
+    }
 
     iframe {
       border-radius: 35px;
@@ -87,9 +135,15 @@
 
   .map-wrapper2 {
     padding-top: 50px;
+    @include max-w(425) {
+      padding-top: 30px;
+    }
 
     .how-to-find {
       p {
+        @include max-w(425) {
+          padding-top: 15px;
+        }
         padding-top: 30px
       }
     }

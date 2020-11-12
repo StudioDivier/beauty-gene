@@ -3,21 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="254278a4-6306-4826-9689-b08edf78f744" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/detail-stuff.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/detail-stuff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/prices.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/prices.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/promo.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/promo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/qa-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/qa-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/stuff.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/stuff.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/promo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prices.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/prices.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/prices.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/prices.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +77,7 @@
       <workItem from="1604906738528" duration="30845000" />
       <workItem from="1604992705892" duration="27640000" />
       <workItem from="1605079145525" duration="28500000" />
-      <workItem from="1605165909118" duration="27050000" />
+      <workItem from="1605165909118" duration="30605000" />
     </task>
     <servers />
   </component>
