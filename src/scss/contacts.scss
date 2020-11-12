@@ -2,3 +2,96 @@
 @import 'common/screen';
 @import 'common/colors';
 @import 'common/variables';
+
+.contacts-page {
+  background-image: url("img/services-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  h3 {
+    font-size: 54px;
+    font-weight: 100;
+    color: $text-color;
+  }
+
+  .headers-wrapper {
+    padding-top: 50px;
+  }
+
+  .content-wrapper {
+    padding-top: 50px;
+
+    .top-banner {
+      img {
+        width: 100%;
+      }
+    }
+
+    .contacts-info {
+      padding-top: 40px;
+
+      .inner-wrapper {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .single-col {
+          position: relative;
+          width: 33%;
+          display: flex;
+          align-items: center;
+          //justify-content: space-between;
+          span {
+            padding-left: 20px;
+          }
+
+          .media {
+            //padding-left: 25px;
+            position: absolute;
+            right: 0;
+
+            img:first-child {
+              padding-right: 25px;
+            }
+          }
+        }
+
+        .single-col:first-child {
+          margin-right: 15px;
+        }
+
+        .single-col:nth-child(2) {
+          border-right: 2px solid #efefef;
+          border-left: 2px solid #efefef;
+          display: flex;
+          justify-content: center;
+        }
+
+        .single-col:last-child {
+          margin-left: 15px;
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+
+  .map-wrapper {
+    padding-top: 50px;
+
+    iframe {
+      border-radius: 35px;
+    }
+  }
+
+  .map-wrapper2 {
+    padding-top: 50px;
+
+    .how-to-find {
+      p {
+        padding-top: 30px
+      }
+    }
+  }
+}
