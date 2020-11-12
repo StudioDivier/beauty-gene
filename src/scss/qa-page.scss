@@ -1,0 +1,18 @@
+@import 'common/mixins';
+@import 'common/screen';
+@import 'common/colors';
+@import 'common/variables';
+
+.qa-page {
+  background-image: url("img/services-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  .headers-wrapper {
+    padding-top: 50px;
+  }
+  .accordions-wrapper {
+    padding-top: 50px;
+  }
+}

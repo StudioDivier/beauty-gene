@@ -146,21 +146,46 @@
         ]
     });
 </script>
-<script>
-let acc = document.getElementsByClassName("accordion");
-let i;
+<!--<script>-->
+<!--    let acc = document.getElementsByClassName("accordion");-->
+<!--    let i;-->
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
+<!--    for (i = 0; i < acc.length; i++) {-->
+<!--        acc[i].addEventListener("click", function () {-->
+<!--            this.classList.toggle("active");-->
+<!--            let panel = this.nextElementSibling;-->
+<!--            if (panel.style.maxHeight) {-->
+<!--                panel.style.maxHeight = null;-->
+<!--            } else {-->
+<!--                panel.style.maxHeight = panel.scrollHeight + "px";-->
+<!--            }-->
+<!--        });-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    $('.mb-0').on('click', function () {-->
+<!--        //do something with the callback-->
+<!--        if ($(this).children('button').hasClass('collapsed')) {-->
+<!--            $(this).children("span").text("-")-->
+<!--        } else {-->
+<!--            $(this).children("span").text("+")-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+<script>
+    $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+        	$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
 </script>
 <footer>
     <div class="container">

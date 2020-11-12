@@ -21,13 +21,24 @@ function html() { // создание задачи
 }
 
 function scss() {
-    return src('src/scss/**.scss') // все файлы с расширением .scss
+    return src(['src/scss/**.scss', '!src/scss/bt.scss']) // все файлы с расширением .scss
         .pipe(sass()) // compile with sass module
         .pipe(autoprefixer({
             browsers: ['last 2 versions']
         }))
         .pipe(csso()) // минифицировать
         .pipe(concat('styles.css')) // соединяем неск. минифицированных файлов в один index.css
+        .pipe(dest('dist'))
+}
+
+function bootstrap() {
+    return src('src/scss/bt.scss') // все файлы с расширением .scss
+        .pipe(sass()) // compile with sass module
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions']
+        }))
+        .pipe(csso()) // минифицировать
+        .pipe(concat('bootstrap.css')) // соединяем неск. минифицированных файлов в один index.css
         .pipe(dest('dist'))
 }
 
@@ -74,6 +85,6 @@ function serve() { // (для режима разработки) может за
 
 // exports.html = html
 // exports.scss = scss
-exports.build = series(scss, html, fonts, imageFolders) // series позволяет последовательно вызывать некоторые задачи
-exports.serve = series(clear, scss, html, fonts, images, imageFolders, serve)
+exports.build = series(bootstrap, scss, html, fonts, imageFolders) // series позволяет последовательно вызывать некоторые задачи
+exports.serve = series(clear, bootstrap, scss, html, fonts, images, imageFolders, serve)
 exports.clear = clear

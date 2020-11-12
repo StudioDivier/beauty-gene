@@ -8,6 +8,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 9;
+  position: relative;
+
+  h2 {
+    font-weight: 100;
+    color: #4d4d4d;
+  }
+
+  h3 {
+    color: #4d4d4d;
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    @include max-w(425) {
+      font-size: 18px;
+    }
+  }
+
+  @include max-w(425) {
+    p, span, li {
+      font-size: 12px;
+    }
+  }
 
   .headers-wrapper {
     padding-bottom: 50px;
@@ -47,12 +70,10 @@
         color: #4d4d4d;
         @include max-w(425) {
           letter-spacing: 1px;
+          font-size: 24px;
         }
         letter-spacing: 3.06px;
         padding-bottom: 15px;
-        @include max-w(425) {
-          font-size: 30px;
-        }
       }
 
       span {
@@ -91,4 +112,127 @@
       }
     }
   }
+
+  .more-info {
+    padding-top: 15px;
+
+    h2 {
+      padding-bottom: 20px;
+      padding-top: 40px;
+      font-size: 62px;
+      letter-spacing: 2.79px;
+      @include max-w(425) {
+        font-size: 22px;
+        letter-spacing: 1px;
+        padding-top: 10px;
+      }
+    }
+
+    p, span, li {
+      font-weight: 100;
+      color: #121212;
+    }
+
+    .stuff-info {
+      span {
+        display: block;
+        padding-bottom: 25px;
+      }
+
+      ul {
+        margin-bottom: 0;
+        width: 50%;
+        @include max-w(425) {
+          width: 100%;
+        }
+        list-style: none;
+        padding-left: 0;
+
+        li {
+          padding-bottom: 15px;
+          @include max-w(425) {
+            line-height: 20px;
+          }
+        }
+
+        li::before {
+          content: url("img/icons/li-dot.png");
+          display: inline-block;
+          width: 1.4em;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .stuff-education {
+      @include max-w(425) {
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      p {
+        width: 75%;
+        @include max-w(425) {
+          width: 100%;
+          line-height: 20px;
+        }
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .stuff-directions {
+    background-image: url("img/whiteBck2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    z-index: 10;
+    margin-top: 185px;
+    padding-bottom: 75px;
+    @include max-w(425) {
+      margin-top: 165px;
+    }
+
+    .headers-wrapper {
+      margin-top: -110px;
+    }
+
+    .direction-wrapper {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fafafa;
+      border-radius: 45px;
+      padding: 55px;
+
+      @include max-w(425) {
+        padding: 35px;
+      }
+
+      h5 {
+        color: $blue-color;
+        font-size: 24px;
+        margin-bottom: 0;
+        padding-bottom: 5px;
+        font-weight: bold;
+        @include max-w(425) {
+          font-size: 18px;
+        }
+      }
+
+      p {
+        margin-top: 17.5px;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+
+      span {
+        padding-bottom: 5px;
+        font-weight: 100;
+      }
+    }
+  }
 }
+
