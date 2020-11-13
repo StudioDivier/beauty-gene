@@ -9,6 +9,12 @@
   background-size: cover;
   background-position: center center;
 
+  p {
+    @include max-w(425) {
+      margin-bottom: 0.2rem;
+    }
+  }
+
   .team-page__workers-section {
 
     padding-top: 50px;
@@ -62,7 +68,7 @@
             font-weight: 100;
             font-size: 30px;
             @include max-w(425) {
-              font-size: 20px;
+              font-size: 22px;
               padding-top: 20px;
               padding-bottom: 5px;
             }

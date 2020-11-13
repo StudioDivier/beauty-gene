@@ -24,6 +24,9 @@
       @include max-w(425) {
         font-size: $subHeader375;
       }
+      @include xl-max {
+        font-size: $subHeaderLG;
+      }
     }
 
     h2 {
@@ -37,6 +40,9 @@
       font-weight: 700;
       @include max-w(425) {
         font-size: $header375;
+      }
+      @include xl-max {
+        font-size: $headerLG;
       }
     }
 
@@ -71,6 +77,23 @@
               font-size: 20px;
               padding-top: 20px;
               padding-bottom: 5px;
+            }
+
+            @include sm-min {
+              font-size: 22.5px;
+              padding-top: 20px;
+              padding-bottom: 5px;
+            }
+
+            @include lg-max {
+              font-size: 25px;
+              padding-top: 20px;
+              padding-bottom: 5px;
+            }
+
+            @include xl-min {
+              padding-top: 15px;
+              font-size: 38px;
             }
           }
         }

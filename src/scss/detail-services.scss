@@ -60,13 +60,13 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    @include max-w(425) {
+    @include lg-max {
       flex-wrap: wrap;
     }
 
     .inner-wrapper {
       width: 55%;
-      @include max-w(425) {
+      @include lg-max {
         width: 100%;
         text-align: center;
         p {
@@ -87,8 +87,9 @@
         }
 
         .inner-wrapper {
-          @include max-w(425) {
+          @include lg-max {
             width: 100%;
+            padding-left: 30px;
           }
           width: auto;
           padding-right: 57px;
@@ -119,7 +120,7 @@
       .cta-button {
         margin-top: 40px;
         padding: 20px 60px;
-        @include max-w(425) {
+        @include lg-max {
           margin-bottom: 40px;
         }
       }
@@ -139,7 +140,7 @@
     }
 
     .inner-wrapper-two {
-      @include max-w(425) {
+      @include lg-max {
         width: 100%;
         padding-left: 0;
         img {
@@ -159,14 +160,14 @@
     padding-bottom: 0;
     z-index: 10;
     position: relative;
-    @include max-w(425) {
+    @include lg-max {
       margin-top: 125px;
     }
 
     .headers-wrapper {
       .section-header {
         margin-top: -30px;
-        @include max-w(425) {
+        @include lg-max {
           margin-top: 0;
         }
       }
@@ -177,11 +178,14 @@
     }
 
     .another-wrapper {
-      @include max-w(425) {
+      @include lg-max {
         padding-top: 0;
       }
 
       .col-lg-2, .col-lg-8 {
+        @include max-w(425) {
+          padding: 10px 0;
+        }
         padding: 20px 0;
       }
 
@@ -190,7 +194,7 @@
       }
 
       .row:first-child {
-        @include max-w(425) {
+        @include lg-max {
           display: none;
         }
 
@@ -200,7 +204,7 @@
       }
 
       .row:last-child {
-        @include max-w(425) {
+        @include lg-max {
           display: none;
         }
         border-bottom: 0;
@@ -214,20 +218,20 @@
         padding: 0;
         font-size: 22px;
         margin-left: 10px !important;
-        @include max-w(425) {
+        @include lg-max {
           margin-left: -15px !important;
         }
 
         .white-col {
           background-color: white;
-          @include max-w(425) {
+          @include lg-max {
             background-color: transparent;
           }
         }
       }
     }
 
-    @include max-w(425) {
+    @include lg-max {
       .custom-row:nth-last-child(2) {
         border-bottom: 0 !important;
         padding-bottom: 15px !important;
@@ -241,14 +245,14 @@
         display: none;
       }
 
-      @include max-w(425) {
+      @include lg-max {
         .mobile-only {
           display: block;
         }
       }
 
       .col-lg-8 {
-        @include max-w(425) {
+        @include lg-max {
           text-align: center;
         }
         padding-left: 0;
@@ -259,7 +263,7 @@
         padding: 10px 25px;
         border-radius: 35px;
         text-align: center;
-        @include max-w(425) {
+        @include lg-max {
           display: flex;
           justify-content: space-between;
           flex-direction: row;
@@ -271,7 +275,7 @@
         padding: 10px 25px;
         border-radius: 35px;
         text-align: center;
-        @include max-w(425) {
+        @include lg-max {
           display: flex;
           justify-content: space-between;
           flex-direction: row;

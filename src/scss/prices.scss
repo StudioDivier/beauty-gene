@@ -19,6 +19,9 @@
     background-size: cover;
     background-position: center center;
     padding-bottom: 150px;
+    @include md-max {
+      padding-bottom: 75px;
+    }
   }
 
   .callback-section {
@@ -26,6 +29,10 @@
     padding-top: 190px;
     padding-bottom: 40px;
     margin-top: 120px;
+    @include md-max {
+      padding-bottom: 50px !important;
+      margin-top: -35px !important;
+    }
   }
 
   .content-wrapper {
@@ -44,6 +51,9 @@
       color: #121212;
       width: 100%;
       margin-bottom: 20px;
+      @include md-max {
+        font-size: 24px;
+      }
     }
 
     hr {
@@ -72,9 +82,11 @@
         }
         display: flex;
         flex-direction: column;
+
         @include max-w(425) {
           p:last-child {
-            font-size: 12px;
+            font-size: 14px;
+            font-weight: bold;
           }
         }
       }
@@ -82,10 +94,16 @@
       .price-block-blue {
         @include max-w(425) {
           width: 100%;
-          margin: 0 auto;
+          margin: 10px auto;
+        }
+        @include sm-min {
+          width: 37.5%;
+        }
+        @include xl-min {
+          width: 25%;
         }
         display: block;
-        width: 15%;
+        //width: 15%;
         padding: 10px 20px;
         background-color: #d1dbe6;
         border-radius: 27px;
@@ -96,10 +114,16 @@
       .price-block-green {
         @include max-w(425) {
           width: 100%;
-          margin: 0 auto;
+          margin: 10px auto;
+        }
+        @include sm-min {
+          width: 37.5%;
+        }
+        @include xl-min {
+          width: 25%;
         }
         display: block;
-        width: 15%;
+        //width: 15%;
         padding: 10px 20px;
         background-color: #d7e4d7;
         border-radius: 27px;

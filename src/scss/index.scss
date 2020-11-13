@@ -28,7 +28,7 @@
   border: 0;
   padding: 16px 45px;
   color: white;
-  @include max-w(375) {
+  @include max-w(425) {
     font-size: 12px;
     padding: 10px 30px;
   }
@@ -70,26 +70,55 @@
     font-size: 68px;
     color: #4d4d4d;
     font-weight: 300;
-    @include max-w(425) {
-      font-size: $subHeader375;
+    @include max-w(576) {
+      font-size: $subHeader375 !important;
+    }
+    @include sm-min {
+      font-size: $subHeaderSM !important;
+    }
+    @include md-min {
+      font-size: $subHeaderLG !important;
+    }
+    @include xl-min {
+      font-size: 68px !important;
     }
   }
 
   .section-header {
-    font-size: 110px;
+    //font-size: 110px;
     font-family: 'Montserrat', sans-serif;
     color: $brown-color;
     margin-top: -40px;
     text-transform: uppercase;
-    //text-align: center;
     font-weight: 800;
     padding-left: 80px;
     letter-spacing: 7.08px;
-    @include max-w(425) {
+    @include max-w(576) {
       text-align: left;
       letter-spacing: 1px;
       padding-left: 20px;
-      font-size: $header375;
+      font-size: $header375 !important;
+      margin-top: 0;
+    }
+    @include sm-min {
+      text-align: left;
+      letter-spacing: 1px;
+      padding-left: 20px;
+      font-size: $header375 !important;
+      margin-top: 0;
+    }
+    @include md-min {
+      text-align: left;
+      letter-spacing: 1px;
+      padding-left: 20px;
+      font-size: $headerSM !important;
+      margin-top: 0;
+    }
+    @include xl-min {
+      text-align: left;
+      letter-spacing: 1px;
+      padding-left: 20px;
+      font-size: 110px !important;
       margin-top: 0;
     }
   }
@@ -109,7 +138,7 @@ footer {
   padding-top: 220px;
   margin-top: -185px;
 
-  @include max-w(425) {
+  @include lg-max {
     z-index: 4;
   }
 
@@ -122,12 +151,19 @@ footer {
       padding-bottom: 30px;
       padding-top: 30px;
     }
+    @include lg-max {
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
 
     span:first-child {
       font-weight: 100;
       font-size: 30px;
       @include max-w(425) {
         font-size: 16px;
+      }
+      @include sm-max {
+        font-size: 18px;
       }
     }
 
@@ -193,7 +229,7 @@ footer {
   width: 100%;
   padding-top: 40px;
   text-align: center;
-  @include max-w(425) {
+  @include lg-max {
     padding-top: 20px;
   }
 
@@ -202,7 +238,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    @include max-w(425) {
+    @include xl-max {
       justify-content: center;
     }
 
@@ -212,11 +248,17 @@ footer {
   }
 
   input {
-    @include max-w(425) {
+    @include lg-max {
       margin-bottom: 20px;
       padding: 14px 30px;
       width: 85%;
       font-size: 12px;
+    }
+    @include xl-max {
+      margin-bottom: 20px;
+      padding: 14px 30px;
+      width: 85%;
+      font-size: 16px;
     }
     border-radius: 35px;
     background-color: #ebf9eb;
@@ -226,8 +268,11 @@ footer {
   }
 
   p {
-    @include max-w(425) {
+    @include max-w(576) {
       font-size: 12px;
+    }
+    @include lg-min {
+      font-size: 16px;
     }
     padding-top: 30px;
   }
@@ -240,28 +285,51 @@ footer {
   font-weight: 500;
 
   span:first-child {
-    font-size: 18px;
     font-weight: 300;
     @include max-w(425) {
       font-size: 14px;
+    }
+    @include lg-max {
+      font-size: 18px
+    }
+    @include xl-min {
+      font-size: 18px
     }
   }
 
   span:nth-child(2) {
     color: $green-color;
-    font-size: 42px;
     @include max-w(425) {
       font-size: 20px;
+    }
+    @include md-min {
+      font-size: 25px;
+    }
+    @include lg-max {
+      font-size: 30px;
+    }
+    @include xl-min {
+      font-size: 42px;
     }
   }
 
   span:last-child {
     color: $blue-color;
-    font-size: 65px;
-    margin-top: -25px;
     @include max-w(425) {
       margin-top: -10px;
       font-size: 25px;
+    }
+    @include md-min {
+      margin-top: -10px;
+      font-size: 30px;
+    }
+    @include lg-max {
+      margin-top: -10px;
+      font-size: 35px;
+    }
+    @include xl-min {
+      margin-top: -25px;
+      font-size: 65px;
     }
   }
 
@@ -279,6 +347,10 @@ footer {
   @include max-w(425) {
     //padding-top: 100px;
     margin-top: -100px;
+  }
+  @include lg-max {
+    padding-top: 400px;
+    margin-top: -150px;
   }
 
   .container {
@@ -329,7 +401,7 @@ footer {
 
 .navbar {
   background-color: white;
-  @include max-w(425) {
+  @include xl-max {
     justify-content: space-between !important;
     display: flex;
   }
@@ -398,8 +470,13 @@ footer {
     font-weight: 100;
     height: 100%;
     max-width: 45%;
-    @include max-w(425) {
+    @include lg-max {
       max-width: 100%;
+      padding: 50px 25px;
+    }
+
+    @include lg-max {
+      max-width: 75%;
       padding: 50px 25px;
     }
 
@@ -435,13 +512,14 @@ footer {
   @include max-w(425) {
     padding-top: 35px;
   }
+
   margin-bottom: -70px;
 
   .perks-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
-    @include max-w(425) {
+    @include md-max {
       padding-bottom: 15px;
     }
 
@@ -474,6 +552,24 @@ footer {
       justify-content: center;
       flex-wrap: wrap;
     }
+    @include sm-max {
+      max-width: 100%;
+      padding: 0;
+      margin-top: 270px;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    @include md-max {
+      max-width: 100%;
+      padding: 0;
+      margin-top: 250px;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     max-width: 65%;
     padding: 200px 0 100px;
     margin-top: 20px;
@@ -498,6 +594,9 @@ footer {
       @include max-w(425) {
         width: 90%;
         font-size: 14px;
+      }
+      @include md-max {
+        width: 100%;
       }
       width: 75%;
       padding: 15px 25px 20px;
@@ -583,10 +682,19 @@ footer {
       display: none !important;
     }
   }
+  @include max-w(1500) {
+    padding-top: 250px;
+    .slick-arrow {
+      display: none !important;
+    }
+  }
 
   .headerCol {
     padding: 0;
     @include max-w(425) {
+      text-align: center;
+    }
+    @include xl-max {
       text-align: center;
     }
 
@@ -606,6 +714,15 @@ footer {
         letter-spacing: 3px;
         text-align: center;
       }
+      @include md-max {
+        font-size: 42px;
+      }
+      @include lg-max {
+        font-size: 52px;
+      }
+      @include xl-max {
+        font-size: 59px;
+      }
     }
 
     span:last-child {
@@ -618,6 +735,14 @@ footer {
         padding-top: 10px;
         margin-top: 0;
         font-size: 20px;
+      }
+      @include md-max {
+        margin-top: 0;
+        font-size: 30px;
+      }
+      @include xl-max {
+        margin-top: 0;
+        font-size: 37px;
       }
     }
   }
@@ -672,7 +797,7 @@ footer {
     z-index: 5;
 
     .price-row {
-      @include max-w(425) {
+      @include lg-max {
         padding-top: 0;
       }
       padding-top: 50px;
@@ -682,7 +807,7 @@ footer {
 
       .price-wrapper {
         display: flex;
-        @include max-w(425) {
+        @include lg-max {
           flex-wrap: wrap;
         }
         flex-direction: row;
@@ -690,7 +815,7 @@ footer {
         align-items: center;
 
         .text-wrapper {
-          @include max-w(425) {
+          @include lg-max {
             width: 100%;
           }
           display: flex;
@@ -703,7 +828,7 @@ footer {
         }
 
         .price-block-blue {
-          @include max-w(425) {
+          @include lg-max {
             width: 100%;
             margin: 0 auto;
           }
@@ -717,7 +842,7 @@ footer {
         }
 
         .price-block-green {
-          @include max-w(425) {
+          @include lg-max {
             width: 100%;
             margin: 0 auto;
           }
@@ -758,12 +883,15 @@ footer {
       display: none !important;
     }
   }
+  @include md-max {
+    padding-bottom: 100px;
+  }
 
   .promo-slider {
     padding-top: 40px;
 
     .inner-wrapper {
-      @include max-w(425) {
+      @include lg-max {
         padding: 25px;
       }
       background-image: url("img/banner1.png");
@@ -776,7 +904,7 @@ footer {
       padding: 64px;
 
       .text-wrapper {
-        @include max-w(425) {
+        @include max-w(576) {
           width: 100%;
           .inner-text-wrapper {
             background-color: rgba(255, 255, 255, 0.3);
@@ -794,8 +922,11 @@ footer {
         }
 
         div:first-child {
-          @include max-w(425) {
+          @include max-w(576) {
             width: 40%;
+          }
+          @include lg-max {
+            width: 50%;
           }
           background-color: #577593;
           border-radius: 22px;
@@ -815,6 +946,9 @@ footer {
           @include max-w(425) {
             font-size: $header375;
           }
+          @include md-max {
+            font-size: $headerSM;
+          }
 
           .colored-span {
             font-weight: 900;
@@ -828,11 +962,14 @@ footer {
           @include max-w(425) {
             font-size: $subHeader375;
           }
+          @include md-max {
+            font-size: $subHeaderSM;
+          }
         }
       }
 
       .cta-button {
-        @include max-w(425) {
+        @include lg-max {
           width: 100%;
         }
         margin-top: 35px;
@@ -861,10 +998,18 @@ footer {
     }
   }
 
+  @include max-w(1350) {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    .slick-arrow {
+      display: none !important;
+    }
+  }
+
   .steps-slider {
     .inner-wrapper {
       .content-block {
-        @include max-w(425) {
+        @include lg-max {
           width: 100%;
         }
 
@@ -952,9 +1097,16 @@ footer {
     }
   }
 
+  @include max-w(1300) {
+    padding-bottom: 65px;
+    .slick-arrow {
+      display: none !important;
+    }
+  }
+
   .stuff-slider {
     padding-top: 75px;
-    @include max-w(425) {
+    @include lg-max {
       padding-top: 30px;
     }
 
@@ -989,13 +1141,14 @@ footer {
       }
     }
   }
-
 }
+
+// QA Section ------------------------------------------------------------------
 
 .qa-section {
   background-image: url("img/background4.png");
   background-repeat: no-repeat;
-  @include max-w(425) {
+  @include lg-max {
     background-size: auto;
   }
   background-size: cover;
@@ -1007,7 +1160,7 @@ footer {
   padding-bottom: 100px;
   //height: 1565px;
   background-attachment: fixed;
-  @include max-w(425) {
+  @include lg-max {
     padding-top: 180px;
     margin-top: -130px;
     //height: 900px;
@@ -1072,7 +1225,7 @@ footer {
     color: $blue-color;
     position: absolute;
     right: 30px;
-    @include max-w(425) {
+    @include lg-max {
       display: none;
     }
   }
@@ -1088,6 +1241,9 @@ footer {
   button {
     @include max-w(425) {
       font-size: 16px;
+    }
+    @include md-max {
+      font-size: 22px;
     }
     font-size: 26px;
     font-weight: 100;
@@ -1131,7 +1287,7 @@ footer {
     h2 {
       font-size: 38px;
       font-weight: 100;
-      letter-spacing: 2.25px;
+      //letter-spacing: 2.25px;
       width: 100%;
       padding-top: 15px;
       padding-bottom: 25px;
@@ -1145,9 +1301,10 @@ footer {
         width: 100%;
         margin-bottom: 25px;
         box-shadow: 0 0 0 0;
+
         &:focus {
-        outline: 0;
-      }
+          outline: 0;
+        }
       }
 
       button {

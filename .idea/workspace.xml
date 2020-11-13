@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="254278a4-6306-4826-9689-b08edf78f744" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/detail-promo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/detail-services.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/detail-promo.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/detail-services.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/detail-promo.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/detail-promo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/detail-services.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/detail-services.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/detail-stuff.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/detail-stuff.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/prices.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/prices.html" afterDir="false" />
@@ -17,11 +15,19 @@
       <change beforePath="$PROJECT_DIR$/dist/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/stuff.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/stuff.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/common/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/common/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/contacts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/detail-promo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/detail-promo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/detail-services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/detail-services.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/detail-stuff.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/detail-stuff.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/prices.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/prices.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/services.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/stuff.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/stuff.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +97,7 @@
       <workItem from="1604992705892" duration="27640000" />
       <workItem from="1605079145525" duration="28500000" />
       <workItem from="1605165909118" duration="30605000" />
-      <workItem from="1605250906853" duration="17391000" />
+      <workItem from="1605250906853" duration="26992000" />
     </task>
     <servers />
   </component>
@@ -115,9 +121,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605175445214" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605262548460">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605271850998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605262548460" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605271850998" />
   </component>
 </project>

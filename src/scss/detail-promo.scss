@@ -14,14 +14,17 @@
     padding-bottom: 20px;
     color: $text-color;
     font-weight: 100;
-    @include max-w(425) {
-      font-size: 25px;
+    @include max-w(576) {
+      font-size: 25px !important;
+    }
+    @include lg-max {
+      font-size: 35px !important;
     }
   }
 
   p, span, li {
     @include max-w(425) {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 
@@ -194,7 +197,7 @@
       p {
         font-size: 18px;
         @include max-w(425) {
-          font-size: 12px;
+          font-size: 14px;
         }
         color: #121212;
         font-weight: 100;
@@ -247,7 +250,7 @@
     .headers-wrapper {
       .section-header {
         margin-top: -30px;
-        @include max-w(425) {
+        @include lg-max {
           margin-top: 0;
         }
       }
@@ -258,12 +261,15 @@
     }
 
     .another-wrapper {
-      @include max-w(425) {
+      @include lg-max {
         padding-top: 0;
       }
 
       .col-lg-2, .col-lg-8 {
         padding: 20px 0;
+        @include max-w(425) {
+          padding: 10px 0;
+        }
       }
 
       .col-lg-2 {
@@ -271,7 +277,7 @@
       }
 
       .row:first-child {
-        @include max-w(425) {
+        @include lg-max {
           display: none;
         }
 
@@ -281,7 +287,7 @@
       }
 
       .row:last-child {
-        @include max-w(425) {
+        @include lg-max {
           display: none;
         }
         border-bottom: 0;
@@ -295,20 +301,20 @@
         padding: 0;
         font-size: 22px;
         margin-left: 10px !important;
-        @include max-w(425) {
+        @include lg-max {
           margin-left: -15px !important;
         }
 
         .white-col {
           background-color: white;
-          @include max-w(425) {
+          @include lg-max {
             background-color: transparent;
           }
         }
       }
     }
 
-    @include max-w(425) {
+    @include lg-max {
       .custom-row:nth-last-child(2) {
         border-bottom: 0 !important;
         padding-bottom: 15px !important;
@@ -322,14 +328,14 @@
         display: none;
       }
 
-      @include max-w(425) {
+      @include lg-max {
         .mobile-only {
           display: block;
         }
       }
 
       .col-lg-8 {
-        @include max-w(425) {
+        @include lg-max {
           text-align: center;
         }
         padding-left: 0;
@@ -340,7 +346,7 @@
         padding: 10px 25px;
         border-radius: 35px;
         text-align: center;
-        @include max-w(425) {
+        @include lg-max {
           display: flex;
           justify-content: space-between;
           flex-direction: row;
@@ -352,7 +358,7 @@
         padding: 10px 25px;
         border-radius: 35px;
         text-align: center;
-        @include max-w(425) {
+        @include lg-max {
           display: flex;
           justify-content: space-between;
           flex-direction: row;

@@ -18,7 +18,19 @@
     font-weight: 100;
     color: $text-color;
     @include max-w(425) {
-      font-size: 25px;
+      font-size: 25px !important;
+    }
+    @include sm-max {
+      font-size: 30px !important;
+    }
+    @include md-max {
+      font-size: 35px !important;
+    }
+    @include lg-max {
+      font-size: 40px !important;
+    }
+    @include xl-min {
+      font-size: 54px !important;
     }
   }
 
@@ -43,13 +55,13 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        @include max-w(425) {
+        @include lg-max {
           flex-wrap: wrap;
           flex-direction: column;
         }
 
         .single-col {
-          @include max-w(425) {
+          @include lg-max {
             width: 100%;
             padding: 0 0 25px 0 !important;
             display: flex;
@@ -73,13 +85,13 @@
           }
 
           .phone-div {
-            @include max-w(425) {
+            @include lg-max {
               width: 100%;
             }
           }
 
           .media {
-            @include max-w(425) {
+            @include lg-max {
               position: relative;
               justify-content: center;
               width: 100%;

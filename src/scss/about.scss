@@ -23,6 +23,9 @@
       @include max-w(425) {
         font-size: 25px;
       }
+      @include lg-max {
+        font-size: 30px;
+      }
     }
 
     .content-section {
@@ -45,12 +48,15 @@
           @include max-w(425) {
             font-size: 12px;
           }
+          @include md-max {
+            font-size: 14px;
+          }
 
           .inner-wrapper {
             padding-top: 35px;
             width: 100%;
             display: flex;
-            @include max-w(425) {
+            @include lg-max {
               padding-top: 0;
               flex-wrap: wrap;
             }
@@ -73,7 +79,7 @@
 
 
             div, img {
-              @include max-w(425) {
+              @include lg-max {
                 width: 100%;
               }
               width: calc(50% - 20px);

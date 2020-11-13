@@ -28,7 +28,7 @@
 
   @include max-w(425) {
     p, span, li {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 
@@ -68,9 +68,12 @@
         font-weight: 100;
         font-size: 68px;
         color: #4d4d4d;
-        @include max-w(425) {
+        @include max-w(576) {
           letter-spacing: 1px;
-          font-size: 24px;
+          font-size: 24px !important;
+        }
+        @include lg-max {
+          font-size: 35px !important;
         }
         letter-spacing: 3.06px;
         padding-bottom: 15px;
@@ -98,9 +101,12 @@
       }
 
       button {
-        @include max-w(425) {
+        @include max-w(576) {
           width: 100%;
           margin-bottom: 20px;
+        }
+        @include lg-max {
+          width: 100%;
         }
         margin-top: 10px;
         width: 50%;
@@ -121,10 +127,13 @@
       padding-top: 40px;
       font-size: 62px;
       letter-spacing: 2.79px;
-      @include max-w(425) {
-        font-size: 22px;
+      @include max-w(576) {
+        font-size: 22px !important;
         letter-spacing: 1px;
         padding-top: 10px;
+      }
+      @include lg-max {
+        font-size: 30px !important;
       }
     }
 
