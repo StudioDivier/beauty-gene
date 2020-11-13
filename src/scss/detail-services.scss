@@ -1,0 +1,282 @@
+@import 'common/mixins';
+@import 'common/screen';
+@import 'common/colors';
+@import 'common/variables';
+
+.detail-services-page {
+  background-color: #fafafa;
+
+  .detail-services-page__content-wrapper {
+    background-image: url("img/detail-services.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 130px;
+  }
+
+  .callback-section {
+    background-image: url("img/weirdWhiteBck.png");
+    padding-top: 190px;
+    padding-bottom: 40px;
+    margin-top: 120px;
+    @include max-w(425) {
+      margin-top: 0;
+    }
+  }
+
+  @include max-w(425) {
+    .inputs-wrapper {
+      p {
+        width: 100% !important;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 62px;
+    padding-bottom: 20px;
+    color: $text-color;
+    font-weight: 100;
+    @include max-w(425) {
+      font-size: 25px;
+    }
+  }
+
+  p, span, li {
+    @include max-w(425) {
+      font-size: 12px;
+    }
+  }
+
+  .headers-wrapper {
+    padding-top: 50px;
+    @include max-w(425) {
+      padding-top: 25px;
+    }
+  }
+
+  .content-wrapper {
+    //padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include max-w(425) {
+      flex-wrap: wrap;
+    }
+
+    .inner-wrapper {
+      width: 55%;
+      @include max-w(425) {
+        width: 100%;
+        text-align: center;
+        p {
+          font-size: 12px !important;
+        }
+      }
+
+      .features-wrapper {
+        background-color: white;
+        padding: 30px 30px 15px;
+        box-shadow: 0 6px 11px rgba(0, 0, 0, 0.06);
+        border-radius: 35px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include max-w(425) {
+          text-align: center;
+        }
+
+        .inner-wrapper {
+          @include max-w(425) {
+            width: 100%;
+          }
+          width: auto;
+          padding-right: 57px;
+          padding-bottom: 25px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          img {
+            padding-right: 15px;
+          }
+
+          .text-wrapper {
+            @include max-w(425) {
+              text-align: left;
+            }
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+
+            .classification {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .cta-button {
+        margin-top: 40px;
+        padding: 20px 60px;
+        @include max-w(425) {
+          margin-bottom: 40px;
+        }
+      }
+
+      p {
+        padding-top: 15px;
+        font-size: 18px;
+      }
+
+      .main-image {
+        padding: 5px;
+        background-color: white;
+        border-radius: 35px;
+        position: relative;
+        top: -40px;
+      }
+    }
+
+    .inner-wrapper-two {
+      @include max-w(425) {
+        width: 100%;
+        padding-left: 0;
+        img {
+          width: 100%;
+        }
+      }
+      padding-left: 30px;
+      width: 45%;
+    }
+
+  }
+
+  .prices-section {
+    background-image: url("img/weirdWhiteBck2.png");
+    padding-top: 60px;
+    margin-top: 100px;
+    padding-bottom: 0;
+    z-index: 10;
+    position: relative;
+    @include max-w(425) {
+      margin-top: 125px;
+    }
+
+    .headers-wrapper {
+      .section-header {
+        margin-top: -30px;
+        @include max-w(425) {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .section-wrapper {
+      padding: 0 40px;
+    }
+
+    .another-wrapper {
+      @include max-w(425) {
+        padding-top: 0;
+      }
+
+      .col-lg-2, .col-lg-8 {
+        padding: 20px 0;
+      }
+
+      .col-lg-2 {
+        text-align: center;
+      }
+
+      .row:first-child {
+        @include max-w(425) {
+          display: none;
+        }
+
+        .col-lg-2, .col-lg-8 {
+          padding-top: 40px;
+        }
+      }
+
+      .row:last-child {
+        @include max-w(425) {
+          display: none;
+        }
+        border-bottom: 0;
+
+        .col-lg-2, .col-lg-8 {
+          padding-bottom: 60px;
+        }
+      }
+
+      .row {
+        padding: 0;
+        font-size: 22px;
+        margin-left: 10px !important;
+        @include max-w(425) {
+          margin-left: -15px !important;
+        }
+
+        .white-col {
+          background-color: white;
+          @include max-w(425) {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    @include max-w(425) {
+      .custom-row:nth-last-child(2) {
+        border-bottom: 0 !important;
+        padding-bottom: 15px !important;
+      }
+    }
+
+    .custom-row {
+      border-bottom: 3px dotted $blue-color;
+
+      .mobile-only {
+        display: none;
+      }
+
+      @include max-w(425) {
+        .mobile-only {
+          display: block;
+        }
+      }
+
+      .col-lg-8 {
+        @include max-w(425) {
+          text-align: center;
+        }
+        padding-left: 0;
+      }
+
+      .green-colored-div {
+        background-color: $light-green;
+        padding: 10px 25px;
+        border-radius: 35px;
+        text-align: center;
+        @include max-w(425) {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+        }
+      }
+
+      .blue-colored-div {
+        background-color: $light-blue;
+        padding: 10px 25px;
+        border-radius: 35px;
+        text-align: center;
+        @include max-w(425) {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}

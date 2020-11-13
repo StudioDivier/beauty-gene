@@ -62,7 +62,7 @@ function images() {
 }
 
 function imageFolders() {
-    return src('src/img/*/**.{jpg,svg,jpeg,png}')
+    return src('src/img/*/**.{jpg,svg,jpeg,png,ico}')
         .pipe(dest('dist/img'));
 }
 

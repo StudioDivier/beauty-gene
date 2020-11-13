@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import 'common/mixins';
 @import 'common/screen';
 @import 'common/colors';
 @import 'common/variables';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 
 @font-face {
   font-family: FuturaFont;
@@ -83,8 +84,10 @@
     //text-align: center;
     font-weight: 800;
     padding-left: 80px;
+    letter-spacing: 7.08px;
     @include max-w(425) {
       text-align: left;
+      letter-spacing: 1px;
       padding-left: 20px;
       font-size: $header375;
       margin-top: 0;
@@ -281,6 +284,44 @@ footer {
   .container {
     position: relative;
     top: -65px;
+  }
+}
+
+.priceList-section {
+  background-image: url("img/weirdWhiteBck.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  //padding-top: 360px;
+  //padding-bottom: 365px;
+  z-index: 2;
+  position: relative;
+  @include max-w(425) {
+    //padding-top: 100px;
+    margin-top: -100px;
+  }
+
+  .container {
+    position: relative;
+    top: -65px;
+
+    .headers-wrapper {
+      .section-header {
+        margin-top: -30px;
+      }
+    }
+  }
+}
+
+.firstPic {
+  background-image: url('img/figure1.png');
+  background-repeat: no-repeat;
+  background-position: bottom 120px left 160px;
+
+  .secondPic {
+    background-image: url('img/figure2.png');
+    background-repeat: no-repeat;
+    background-position: top 65px right 165px;
   }
 }
 
@@ -608,13 +649,6 @@ footer {
 
 .prices-section {
   background-image: url("img/whiteBck.png");
-  //  background-clip: border-box;
-  //clip-path: ellipse(55% 35% at 55% 35%);
-  //clip-path: polygon(0% 20%, 7% 13%, 16% 9%, 27% 6%, 35% 2%, 51% 0%, 61% 0%, 72% 2%, 80% 5%, 88% 10%, 95% 16%, 99% 21%, 100% 81%, 91% 91%, 83% 95%, 72% 96%, 60% 98%, 48% 99%, 37% 99%, 29% 97%, 14% 93%, 5% 86%, 0% 80%);
-  //border-top-right-radius: 110% 0;
-  //border-top-left-radius: 110% 0;
-  //border-radius: 110% 50%;
-  //background-color: white;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -622,25 +656,7 @@ footer {
   margin-top: -300px;
   padding-top: 100px;
 
-  .firstPic {
-    background-image: url('img/figure1.png');
-    background-repeat: no-repeat;
-    background-position: bottom 120px left 160px;
-
-    .secondPic {
-      background-image: url('img/figure2.png');
-      background-repeat: no-repeat;
-      background-position: top 65px right 165px;
-
-
-    }
-  }
-
   .another-wrapper {
-    //background-color: #fafafa;
-    //background-image: url('img/figure3.png');
-    //background-repeat: no-repeat;
-    //background-position: left 290px top 50px;
     z-index: 6;
   }
 
@@ -648,8 +664,6 @@ footer {
     background-image: url('img/figure3.png');
     background-repeat: no-repeat;
     background-position: left top;
-    //background-size: contain;
-    //background-position: center center;
     position: relative;
     top: -150px;
     background-color: #fafafa;
@@ -1088,6 +1102,60 @@ footer {
     &:focus {
       outline: 0 !important;
       box-shadow: 0 0 0 0;
+    }
+  }
+}
+
+.modal-content {
+  .modal-body {
+    padding: 0 30px 20px;
+  }
+
+  position: relative;
+  border-radius: 25px;
+
+  .close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 35px;
+    font-weight: 100;
+    z-index: 999999999999999999999999;
+  }
+
+  .modal-header {
+    text-align: center;
+  }
+
+  .inputs-wrapper {
+    h2 {
+      font-size: 38px;
+      font-weight: 100;
+      letter-spacing: 2.25px;
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 25px;
+      @include max-w(425) {
+        font-size: 30px;
+      }
+    }
+
+    form {
+      input {
+        width: 100%;
+        margin-bottom: 25px;
+        box-shadow: 0 0 0 0;
+        &:focus {
+        outline: 0;
+      }
+      }
+
+      button {
+        width: 100%;
+        @include max-w(425) {
+          padding: 13px 65px;
+        }
+      }
     }
   }
 }

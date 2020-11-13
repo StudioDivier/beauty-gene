@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="254278a4-6306-4826-9689-b08edf78f744" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/detail-promo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/detail-services.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/detail-promo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/detail-services.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/detail-stuff.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/detail-stuff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/prices.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/prices.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/promo.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/promo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/qa-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/qa-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/stuff.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/stuff.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/prices.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/prices.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/prices.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/prices.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/common/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +52,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/scss" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Exprome/My-Star-front" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -52,12 +64,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Divier\Beauty Gene\beauty-gene\src\scss" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Divier\Beauty Gene\beauty-gene\src\img\icons" />
       <recent name="D:\Divier\Beauty Gene\beauty-gene\src" />
       <recent name="D:\Divier\Beauty Gene\beauty-gene\src\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Divier\Beauty Gene\beauty-gene\src\scss" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -78,6 +91,7 @@
       <workItem from="1604992705892" duration="27640000" />
       <workItem from="1605079145525" duration="28500000" />
       <workItem from="1605165909118" duration="30605000" />
+      <workItem from="1605250906853" duration="17391000" />
     </task>
     <servers />
   </component>
@@ -85,13 +99,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605258140424">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605258140424" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1604918668765">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604918668765" />
+    <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1605254667589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="237" width="583" height="566" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605254667589" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1605175445214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605175445214" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605262548460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605262548460" />
   </component>
 </project>
