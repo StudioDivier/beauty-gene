@@ -1,0 +1,64 @@
+@import 'common/mixins';
+@import 'common/screen';
+@import 'common/colors';
+@import 'common/variables';
+
+.error-page {
+  background-image: url("img/services-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .text-wrapper {
+    padding: 160px 0;
+    h2 {
+      color: #4d4d4d;
+      font-size: 60px;
+      @include lg-max {
+        font-size: 50px;
+      }
+      @include md-max {
+        font-size: 40px;
+      }
+      @include max-w(425) {
+        font-size: 25px;
+      }
+    }
+    h1 {
+      color: #abacaf;
+      font-size: 192px;
+      font-weight: 800;
+      font-family: 'Montserrat', sans-serif !important;
+      @include lg-max {
+        font-size: 120px;
+      }
+      @include md-max {
+        font-size: 80px;
+      }
+      @include max-w(425) {
+        font-size: 50px;
+      }
+    }
+    p {
+      font-size: 22px;
+      color: #121212;
+      text-align: center;
+      @include lg-max {
+        font-size: 20px;
+      }
+      @include md-max {
+        font-size: 20px;
+      }
+      @include max-w(425) {
+        font-size: 16px;
+      }
+    }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .btn-wrapper {
+      padding-top: 50px;
+    }
+  }
+}

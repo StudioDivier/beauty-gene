@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="254278a4-6306-4826-9689-b08edf78f744" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/error-page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/detail-promo.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/detail-promo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/detail-services.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/detail-services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/detail-stuff.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/detail-stuff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/prices.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/prices.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/promo.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/promo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/qa-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/qa-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/stuff.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/stuff.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parts/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/common/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/detail-promo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/detail-promo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/detail-services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/detail-services.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/detail-stuff.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/detail-stuff.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/prices.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/prices.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/services.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/stuff.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/stuff.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/1index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +76,8 @@
       <workItem from="1604992705892" duration="27640000" />
       <workItem from="1605079145525" duration="28500000" />
       <workItem from="1605165909118" duration="30605000" />
-      <workItem from="1605250906853" duration="26992000" />
+      <workItem from="1605250906853" duration="27972000" />
+      <workItem from="1605509487397" duration="4250000" />
     </task>
     <servers />
   </component>
@@ -105,10 +85,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605258140424">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605279039068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605258140424" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605279039068" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1604918668765">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
